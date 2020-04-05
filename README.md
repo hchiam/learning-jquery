@@ -265,3 +265,9 @@ For example, from fastest to slowest: `$('#some-id')` is faster < `$('a.some-cla
 A helpful pattern to remember is: `var cache = $('#container').find('div.some-class')`.
 
 That is actually _faster_ than `var cache = $('#container div.some-class')`, because, again, jQuery searches right-to-left, which means it looks for `div.some-class` before filtering them out with making sure they're inside `#container`.
+
+## Delegated event handling
+
+You can dynamically add event listeners to children elements that don't exist yet!
+
+`$('#parent').on("click", "#child", function() {});`
