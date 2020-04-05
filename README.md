@@ -39,7 +39,7 @@ $(function(){
 });
 ```
 
-EVENT METHODS:
+## Event methods
 
 click
 dblclick
@@ -97,7 +97,7 @@ If need to put functions in a seperate file my_jquery_functions.js:
 </head>
 ```
 
-more functions:
+## More functions:
 
 ```js
 //fadeIn
@@ -253,3 +253,15 @@ $("img").after("Some text after");
 //insert text before an image:
 $("img").before("Some text before");
 ```
+
+## Better performance when using selectors
+
+jQuery searches from right to left when it follows the string inside `$('...')`.
+
+Prefer: id > tag name with class > class.
+
+For example, from fastest to slowest: `$('#some-id')` is faster < `$('a.some-class')` < `$('.some-class')`.
+
+A helpful pattern to remember is: `var cache = $('#container').find('div.some-class')`.
+
+That is actually _faster_ than `var cache = $('#container div.some-class')`, because, again, jQuery searches right-to-left, which means it looks for `div.some-class` before filtering them out with making sure they're inside `#container`.
