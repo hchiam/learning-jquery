@@ -39,7 +39,9 @@ $(function(){
 });
 ```
 
-## Event methods
+Click to expand and learn more:
+
+<details><summary>Event methods</summary>
 
 click
 dblclick
@@ -97,7 +99,9 @@ If need to put functions in a seperate file my_jquery_functions.js:
 </head>
 ```
 
-## More functions:
+</details>
+
+<details><summary>More functions:</summary>
 
 ```js
 //fadeIn
@@ -254,7 +258,9 @@ $("img").after("Some text after");
 $("img").before("Some text before");
 ```
 
-## Better performance when using selectors
+</details>
+
+<details><summary>Better performance when using selectors</summary>
 
 jQuery searches from right to left when it follows the string inside `$('...')`.
 
@@ -266,8 +272,24 @@ A helpful pattern to remember is: `var cache = $('#container').find('div.some-cl
 
 That is actually _faster_ than `var cache = $('#container div.some-class')`, because, again, jQuery searches right-to-left, which means it looks for `div.some-class` before filtering them out with making sure they're inside `#container`.
 
-## Delegated event handling
+</details>
+
+<details><summary>Delegated event handling</summary>
 
 You can dynamically add event listeners to children elements that don't exist yet!
 
 `$('#parent').on("click", "#child", function() {});`
+
+</details>
+
+<details><summary>select2</summary>
+
+<https://codepen.io/hchiam/pen/WNvMaEx>
+
+</details>
+
+<details><summary>KeyTable DataTable</summary>
+
+<https://codepen.io/hchiam/pen/wvKwZRz>
+
+</details>
