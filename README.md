@@ -262,7 +262,7 @@ $("img").before("Some text before");
 
 <details><summary>Better performance when using selectors</summary>
 
-When jQuery looks at the string inside `$('...')`, it searches from right to left (so `.this-last .this-first`).
+When jQuery looks at the string inside `$('...')`, it searches from right to left (so `.this-last .this-second .this-first`).
 
 Prefer: (id) over (tag name with class) over (class).
 
