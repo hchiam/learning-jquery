@@ -262,15 +262,15 @@ $("img").before("Some text before");
 
 <details><summary>Better performance when using selectors</summary>
 
-jQuery searches from right to left when it follows the string inside `$('...')`.
+When jQuery looks at the string inside `$('...')`, it searches from right to left (so `.this-last .this-first`).
 
-Prefer: id > tag name with class > class.
+Prefer: (id) over (tag name with class) over (class).
 
-For example, from fastest to slowest: `$('#some-id')` is faster < `$('a.some-class')` < `$('.some-class')`.
+For example, from fastest to slowest: `$('#some-id')` is faster than `$('a.some-class')` is faster than `$('.some-class')`.
 
 A helpful pattern to remember is: `var cache = $('#container').find('div.some-class')`.
 
-That is actually _faster_ than `var cache = $('#container div.some-class')`, because, again, jQuery searches right-to-left, which means it looks for `div.some-class` before filtering them out with making sure they're inside `#container`.
+That is actually _faster_ than `var cache = $('#container div.some-class')`, because, again, jQuery searches right-to-left inside the selector string, which means it looks for `div.some-class` before filtering for instances that are inside of an element with id `#container`.
 
 </details>
 
