@@ -89,7 +89,7 @@ $(document).ready(function(){
 </html>
 ```
 
-If need to put functions in a seperate file my_jquery_functions.js:
+If need to put functions in a separate file my_jquery_functions.js:
 
 ```html
 <head>
