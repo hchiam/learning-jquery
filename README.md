@@ -99,6 +99,12 @@ If need to put functions in a separate file my_jquery_functions.js:
 </head>
 ```
 
+You can use jQuery to get the event listeners registered on an element:
+
+```js
+$._data($('#element-being-investigated')[0], 'events');
+```
+
 </details>
 
 <details><summary>More functions:</summary>
