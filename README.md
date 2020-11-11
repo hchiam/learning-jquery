@@ -226,6 +226,8 @@ $(document).ready(function(){
 </html>
 ```
 
+(Link: [a note on using `attr()` vs `prop()`](https://stackoverflow.com/questions/5874652/prop-vs-attr/5876747#5876747))
+
 ```js
 //rid it + its children:
 $("#div1").remove();
