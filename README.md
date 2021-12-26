@@ -301,3 +301,11 @@ You can dynamically add event listeners to children elements that don't exist ye
 <https://codepen.io/hchiam/pen/wvKwZRz>
 
 </details>
+
+<details><summary>"scoped" or namespaced events</summary>
+
+You can namespace events! Helpful for unbinding only the one listener of an event you want to unbind, instead of removing all listeners of the same event type.
+
+<https://css-tricks.com/namespaced-events-jquery>
+
+</details>
