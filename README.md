@@ -302,7 +302,7 @@ You can dynamically add event listeners to children elements that don't exist ye
 
 </details>
 
-<details><summary>"scoped" or namespaced events</summary>
+<details><summary>"scoped" or namespaced event listeners</summary>
 
 You can namespace events! Helpful for unbinding only the one listener of an event you want to unbind, instead of removing all listeners of the same event type.
 
