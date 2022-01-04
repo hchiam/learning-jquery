@@ -274,6 +274,8 @@ You can dynamically add event listeners to children elements that don't exist ye
 
 `$('#parent').on("click", "#child", function() {});`
 
+Note: a delegated jQuery event listener might not work on the first trigger: for some reason changing `$('body').on('click',` to `$('body').click(` helps make it work on the first click
+
 </details>
 
 <details><summary>select2</summary>
