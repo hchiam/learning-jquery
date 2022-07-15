@@ -293,6 +293,8 @@ Note: a delegated jQuery event listener might not work on the first trigger: for
 <details><summary>"scoped" or namespaced event listeners</summary>
 
 You can namespace events! Helpful for unbinding only the one listener of an event you want to unbind, instead of removing all listeners of the same event type.
+  
+Example: `.on('click.myNameSpace', function () { });`
 
 <https://css-tricks.com/namespaced-events-jquery>
 
