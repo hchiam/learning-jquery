@@ -35,6 +35,14 @@ $(function () {
 });
 ```
 
+`.ready()` only works on page load --> `.promise().done()` is more likely what you want, and in some cases you might want `.promise().then()` instead
+
+https://api.jquery.com/ready/
+
+https://api.jquery.com/promise/
+
+https://stackoverflow.com/questions/5436327/jquery-deferreds-and-promises-then-vs-done
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
