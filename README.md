@@ -307,3 +307,11 @@ Example: `.on('click.myNameSpace', function () { });`
 <https://css-tricks.com/namespaced-events-jquery>
 
 </details>
+
+<details><summary>don't use `event.stopPropagation`: scoping with `'click.namespace'` doesn't filter by `'click.namespace'`</summary>
+
+demo and what to do instead: https://codepen.io/hchiam/pen/eYjyRxN?editors=1010
+
+explanation: https://css-tricks.com/dangers-stopping-event-propagation/
+
+</details>
