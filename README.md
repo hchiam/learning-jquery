@@ -317,3 +317,9 @@ demo and what to do instead: https://codepen.io/hchiam/pen/eYjyRxN?editors=1010
 explanation: https://css-tricks.com/dangers-stopping-event-propagation/
 
 </details>
+
+<details><summary>How to avoid memory leaks with jQuery .on (see namespace notes above)</summary>
+
+Make use of namespaced events - https://stackoverflow.com/questions/30793066/how-to-avoid-memory-leaks-from-jquery
+
+</details>
