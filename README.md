@@ -43,6 +43,10 @@ https://api.jquery.com/promise/
 
 https://stackoverflow.com/questions/5436327/jquery-deferreds-and-promises-then-vs-done
 
+`:input` and `:button` are examples of special jQuery selectors (not valid CSS selectors)
+- `:input` selects `input` tags but also input-like things like `textarea`, `button`, `select` https://stackoverflow.com/a/14863774
+- `:button` selects `button` tags but also `input[type="button"]` https://stackoverflow.com/a/14863774
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
