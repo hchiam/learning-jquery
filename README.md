@@ -47,6 +47,10 @@ https://stackoverflow.com/questions/5436327/jquery-deferreds-and-promises-then-v
 - `:input` selects `input` tags but also input-like things like `textarea`, `button`, `select` https://stackoverflow.com/a/14863774
 - `:button` selects `button` tags but also `input[type="button"]` https://stackoverflow.com/a/14863774
 
+Pitfall when using `alert`​ for debugging event listeners: https://stackoverflow.com/a/7213895
+- will get cryptic `Uncaught TypeError: Illegal invocation` error message when you click: `$('path').on('click', alert);​` because `alert`​ expects `this`​ to be the same as `window​`
+- won't error when you click: `$('path').on('click', (x)=>alert(x));​`
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
