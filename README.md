@@ -331,3 +331,16 @@ explanation: https://css-tricks.com/dangers-stopping-event-propagation/
 Make use of namespaced events - https://stackoverflow.com/questions/30793066/how-to-avoid-memory-leaks-from-jquery
 
 </details>
+
+<details><summary>D3 svg/path.click() note</summary>
+
+```js
+/** Because simply using d3Element.click() or jQuery $(d3Element).click() doesn't work:
+https://stackoverflow.com/questions/9063383/how-to-invoke-click-event-programmatically-in-d3 */
+function triggerD3PathClick(d3Element) {
+  const event = new MouseEvent("click");
+  d3Element.dispatchEvent(event);
+}
+```
+
+</details>
