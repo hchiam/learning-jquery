@@ -52,6 +52,10 @@ Pitfall when using `alert`​ for debugging event listeners: https://stackoverfl
 - will get cryptic `Uncaught TypeError: Illegal invocation` error message when you click: `$('path').on('click', alert);​` because `alert`​ expects `this`​ to be the same as `window​`
 - won't error when you click: `$('path').on('click', (x)=>alert(x));​`
 
+Event listener `event.target` vs `event.currentTarget`: https://stackoverflow.com/a/10086501
+- `currentTarget` = listening element (e.g. the individual button that has the click event listener fired on it)
+- `target` = triggering element (i.e. maybe the button, or maybe the i or span you actually clicked on inside of the button) 
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
