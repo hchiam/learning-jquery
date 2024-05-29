@@ -56,6 +56,8 @@ Event listener `event.target` vs `event.currentTarget`: https://stackoverflow.co
 - `currentTarget` = listening element (e.g. the individual button that has the click event listener fired on it)
 - `target` = triggering element (i.e. maybe the button, or maybe the i or span you actually clicked on inside of the button) 
 
+Carousel example: (Bootstrap 5.0.0 + jQuery 3.7.1) https://codepen.io/hchiam/pen/zYQoQpR?editors=1000
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
