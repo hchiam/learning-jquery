@@ -58,6 +58,14 @@ Event listener `event.target` vs `event.currentTarget`: https://stackoverflow.co
 
 Carousel example: (Bootstrap 5.0.0 + jQuery 3.7.1) https://codepen.io/hchiam/pen/zYQoQpR?editors=1000
 
+```js
+function GetNextTabbable(jQueryElement, offset = 1) {
+    const tabbables = $(':input, *[tabindex][tabindex!="-1"]').filter(':visible');
+    const index = tabbables.index(jQueryElement);
+    return tabbables.eq(index + offset);
+}
+```
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
