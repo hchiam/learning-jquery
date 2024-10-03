@@ -67,6 +67,10 @@ Get next tabbable/focusable element:
     }
     ```
 
+`jquery-migrate` https://github.com/jquery/jquery-migrate :
+- lets you keep running older code on newer versions of jQuery while you fix compatibility issues
+- update jQuery and THEN use jquery-migrate to restore APIs that were removed and show errors in the browser console while your code is running with the development version of jquery-migrate. Make sure jquery-migrate is loaded into the browser AFTER jquery. 
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
