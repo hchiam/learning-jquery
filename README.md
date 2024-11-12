@@ -71,6 +71,10 @@ Get next tabbable/focusable element:
 - lets you keep running older code on newer versions of jQuery while you fix compatibility issues
 - update jQuery and THEN use jquery-migrate to restore APIs that were removed and show errors in the browser console while your code is running with the development version of jquery-migrate. Make sure jquery-migrate is loaded into the browser AFTER jquery. 
 
+compare JSON texts to get edits/additions/deletions (nested keys too): https://codepen.io/hchiam/full/RwXqxwZ
+
+.docx -> FILTERED .htm -> cleaned-up .html https://codepen.io/hchiam/full/dyxwrEY
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
