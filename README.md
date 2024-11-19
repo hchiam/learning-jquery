@@ -75,6 +75,11 @@ compare JSON texts to get edits/additions/deletions (nested keys too): https://c
 
 .docx -> FILTERED .htm -> cleaned-up .html https://codepen.io/hchiam/full/dyxwrEY
 
+replace element if it contains `&nbsp;` space:
+  ```js
+  $(`.element:contains("\u00a0")`);
+  ```
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
