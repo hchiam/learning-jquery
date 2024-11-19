@@ -73,7 +73,9 @@ Get next tabbable/focusable element:
 
 compare JSON texts to get edits/additions/deletions (nested keys too): https://codepen.io/hchiam/full/RwXqxwZ
 
-.docx -> FILTERED .htm -> cleaned-up .html https://codepen.io/hchiam/full/dyxwrEY
+.docx -> FILTERED .htm -> cleaned-up .html:
+- https://codepen.io/hchiam/full/dyxwrEY
+- backup on GitHub (may not be as current as the CodePen): https://github.com/hchiam/docx_filtered-htm_cleaned-up-html
 
 replace element if it contains `&nbsp;` space:
   ```js
