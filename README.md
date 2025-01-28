@@ -82,6 +82,11 @@ replace element if it contains `&nbsp;` space:
   $(`.element:contains("\u00a0")`);
   ```
 
+iframe `<body>`:
+  ```js
+  $('iframe').contents().find('body')
+  ```
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
