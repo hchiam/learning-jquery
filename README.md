@@ -87,6 +87,8 @@ iframe `<body>`:
   $('iframe').contents().find('body')
   ```
 
+`$(':focus')` is similar to `$(document.activeElement)`, but will have to search the DOM tree - https://api.jquery.com/focus-selector/
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
