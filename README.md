@@ -89,6 +89,8 @@ iframe `<body>`:
 
 `$(':focus')` is similar to `$(document.activeElement)`, but will have to search the DOM tree - https://api.jquery.com/focus-selector/
 
+`return;` (falsy?) does **_NOT_** behave like `return false;` in a jQuery event listener: https://codepen.io/hchiam/pen/wBvxdoK?editors=1010
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
