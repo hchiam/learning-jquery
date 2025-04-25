@@ -91,6 +91,12 @@ iframe `<body>`:
 
 `return;` (falsy?) does **_NOT_** behave like `return false;` in a jQuery event listener: https://codepen.io/hchiam/pen/wBvxdoK?editors=1010
 
+clone element with events: https://api.jquery.com/clone/
+
+- `.clone(true)`
+
+- and `.clone(true, true)` to include children events too
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
