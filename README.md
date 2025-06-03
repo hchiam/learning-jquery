@@ -358,6 +358,10 @@ You can namespace events! Helpful for unbinding only the one listener of an even
   
 Example: `.on('click.myNameSpace', function () { });`
 
+Note:
+- `.off('resize')` would remove both unscoped and scoped `resize` events
+- e.g., `.off('resize')` would remove both `resize` and `resize.myNameSpace`
+
 <https://css-tricks.com/namespaced-events-jquery>
 
 You can do `.off('.namespace')`: "All events of all types in a specific namespace can be removed from an element by providing just a namespace, such as "`.myPlugin`". At minimum, either a namespace or event name must be provided." https://api.jquery.com/off/#:~:text=All%20events%20of%20all%20types%20in%20a%20specific%20namespace%20can%20be%20removed%20from%20an%20element%20by%20providing%20just%20a%20namespace%2C%20such%20as%20%22.myPlugin%22.%20At%20minimum%2C%20either%20a%20namespace%20or%20event%20name%20must%20be%20provided.
