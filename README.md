@@ -25,17 +25,22 @@ http://www.w3schools.com/jquery/jquery_syntax.asp
 ```js
 $(document).ready(function () {
   // jQuery methods go here...(prevented from running before doc loaded)
+  // deprecated old syntax
 });
 ```
 
 ```js
 $(function () {
   // jQuery methods go here...(prevented from running before doc loaded)
-  // (just shortcut typing)
+  // recommended syntax
 });
 ```
 
 `.ready()` only works on page load --> `.promise().done()` is more likely what you want, and in some cases you might want `.promise().then()` instead
+
+but `$(() => {});` or `$(function() {});` should be preferred over the other `.ready` syntax(es) (deprecated)
+
+`$(document).on('ready', handler)` was deprecated as of jQuery 1.8 and removed in jQuery 3.0
 
 https://api.jquery.com/ready/
 
