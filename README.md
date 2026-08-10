@@ -103,6 +103,12 @@ clone element with events: https://api.jquery.com/clone/
 
 - and `.clone(true, true)` to include children events too
 
+to get existing jQuery-added resize event listener handler function names:
+
+```js
+$._data($(window).get(0), 'events')?.resize.map(x=>x.handler.name) // to get existing jQuery-added resize event listener handler function names
+```
+
 Click to expand and learn more:
 
 <details><summary>Event methods</summary>
